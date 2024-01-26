@@ -20,8 +20,8 @@ const winPatterns = [
 const resetGame = () => {
     turnO = true;
     enableBoxes();
-    newgame.style.display = "none";
-    msg.style.display = "none";
+    msg.classList.remove("hide");
+    newgame.classList.remove("hide");
 }
 
 boxes.forEach((box) => {
@@ -55,8 +55,10 @@ const enableBoxes = () => {
 };
 
 const showWinner = (winner) => {
+    
    msg.innerText = `Congratulation, Winner is Player ${winner}`;
-   newgame.style.display = "inline-block";
+   newgame.classList.add("hide");
+   msg.classList.add("hide");
    disableBoxes();
 };
 

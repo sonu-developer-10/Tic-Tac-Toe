@@ -52,11 +52,17 @@ body{
     min-width: 100px;
 }
 
-#startGameBtn{
+.strtBtn{
     display: none;
 }
+
 
 .msg{
     font-size: 20px;
     color: #fff;
+    display: none;
+}
+
+.hide{
+    display: inline-block;
 }
